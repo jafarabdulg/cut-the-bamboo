@@ -8,5 +8,13 @@ public class Main {
         System.out.print("bamboos: ");
         bamboos = scan.nextLine().split(",");
 
+        System.out.println("initials:");
+        for (String bamboo : bamboos) {
+            System.out.print("|");
+            for (int i=0; i<Integer.parseInt(bamboo); i++) {
+                System.out.print("-");
+            }
+            System.out.println("");
+        }
     }
 }
