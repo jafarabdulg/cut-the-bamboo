@@ -18,11 +18,12 @@ public class Main {
         System.out.print("bamboos: ");
         String[] stringBamboos = scan.nextLine().split(",");
         bamboos = new int[stringBamboos.length];
+        System.out.print("cuts: ");
+        cutCycles = scan.nextInt();
+
         for (int i=0; i< stringBamboos.length; i++) {
             bamboos[i] = Integer.parseInt(stringBamboos[i]);
         }
-        System.out.print("cuts: ");
-        cutCycles = scan.nextInt();
 
         System.out.println("initials:");
         showBamboos(bamboos);
